@@ -27,10 +27,35 @@ after_migrate = [
     "helpdesk.search.download_corpus",
 ]
 fixtures = [
-    "Client Script",
-    "Custom Field",
-    "Property Setter",
-    "Workspace"
+
+    {
+        "dt": "Client Script",
+        "filters": [
+            ["module", "=", "Helpdesk"]
+        ]
+    },
+
+    {
+        "dt": "Custom Field",
+        "filters": [
+            ["module", "=", "Helpdesk"]
+        ]
+    },
+
+    {
+        "dt": "Property Setter",
+        "filters": [
+            ["module", "=", "Helpdesk"]
+        ]
+    },
+
+    {
+        "dt": "Workspace",
+        "filters": [
+            ["module", "=", "Helpdesk"]
+        ]
+    }
+
 ]
 # Full Text Search
 # ------------------
