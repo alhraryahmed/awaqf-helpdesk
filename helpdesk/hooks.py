@@ -26,7 +26,12 @@ after_migrate = [
     "helpdesk.search.build_index_in_background",
     "helpdesk.search.download_corpus",
 ]
-
+fixtures = [
+    "Client Script",
+    "Custom Field",
+    "Property Setter",
+    "Workspace"
+]
 # Full Text Search
 # ------------------
 
